@@ -1,0 +1,17 @@
+/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/bin/Debug/netstandard2.0/artmuseum.deps.json
+/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/bin/Debug/netstandard2.0/artmuseum.dll
+/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/bin/Debug/netstandard2.0/ref/artmuseum.dll
+/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/bin/Debug/netstandard2.0/artmuseum.pdb
+/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/obj/Debug/netstandard2.0/Themes/LightTheme.xaml.g.cs
+/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/obj/Debug/netstandard2.0/Views/Home.xaml.g.cs
+/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/obj/Debug/netstandard2.0/Views/Login.xaml.g.cs
+/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/obj/Debug/netstandard2.0/artmuseum.AssemblyInfoInputs.cache
+/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/obj/Debug/netstandard2.0/artmuseum.AssemblyInfo.cs
+/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/obj/Debug/netstandard2.0/artmuseum.csproj.CoreCompileInputs.cache
+/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/obj/Debug/netstandard2.0/artmuseum.dll
+/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/obj/Debug/netstandard2.0/ref/artmuseum.dll
+/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/obj/Debug/netstandard2.0/artmuseum.pdb
+/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/obj/Debug/netstandard2.0/artmuseum.csproj.AssemblyReference.cache

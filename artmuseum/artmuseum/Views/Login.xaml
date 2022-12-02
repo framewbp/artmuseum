@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    x:Class="artmuseum.Views.Login"
+    xmlns:Helpers="clr-namespace:artmuseum.Helpers"
+    xmlns:system="clr-namespace:System;assembly=netstandard"
+    BackgroundImageSource="Background_Login.png">
+
+    <ContentPage.Resources>
+        <Helpers:InverseBoolConverter x:Key="boolConverter"/>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout Padding="60" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+
+            <Label HorizontalOptions="Start">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="YOUR" TextColor="White" FontFamily="MSR" FontSize="40" FontAttributes="Bold" />
+                        <Span Text="{x:Static system:Environment.NewLine}"/>
+                        <Span Text="ART" TextColor="White" FontFamily="MSR" FontSize="40" FontAttributes="Bold"/>
+                        <Span Text="{x:Static system:Environment.NewLine}"/>
+                        <Span Text="MUSEUM" TextColor="White" FontFamily="MSR" FontSize="40" FontAttributes="Bold" />
+                        <Span Text="{x:Static system:Environment.NewLine}"/>
+                        <Span Text="{x:Static system:Environment.NewLine}"/>
+                        <Span Text="151 3rd St" TextColor="White" FontFamily="MSR" FontSize="13" FontAttributes="Bold" />
+                        <Span Text="{x:Static system:Environment.NewLine}"/>
+                        <Span Text="San Francisco, CA 94103" TextColor="White" FontFamily="MSR" FontSize="13" FontAttributes="Bold" />
+                        <Span Text="{x:Static system:Environment.NewLine}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+                <!--<Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>-->
+            </Label>
+
+            <Entry x:Name="txtUserId" Placeholder="Email address" TextColor="Black"
+                   PlaceholderColor="Black" BackgroundColor="White"
+                   FontFamily="MSR" FontSize="14" FontAttributes="Bold"
+                   IsPassword="False" Margin="0,0,0,0" TabIndex="1"
+                   HorizontalOptions="Fill" VerticalOptions="CenterAndExpand"
+                   Text="{Binding users.username, Mode=TwoWay}"></Entry>
+            <Entry x:Name="txtPassword" Placeholder="Password" IsPassword="True"
+                   TextColor="Black" PlaceholderColor="Black"
+                   BackgroundColor="White" FontFamily="MSR" FontSize="14"
+                   FontAttributes="Bold"
+                   Margin="0,-4,0,0"
+                   Text="{Binding users.password, Mode=TwoWay}"></Entry>
+
+            <Button x:Name="btnLogin"
+                Margin="0,40,0,0"
+                Text="Log in" 
+                Command="{Binding btnLogin}" 
+                IsEnabled="{Binding isActivity, Converter={StaticResource boolConverter}}"
+                IsVisible="{Binding isActivity, Converter={StaticResource boolConverter}}" 
+                TextColor="White"
+                VerticalOptions="Center"
+                BackgroundColor="#ff473a"
+                FontFamily="MSR"
+                FontSize="14"
+                FontAttributes="Bold"
+                TextTransform="None"/>
+                
+            <ActivityIndicator IsRunning="{Binding isActivity}" IsVisible="{Binding isActivity}" Margin="5"
+                               HorizontalOptions="Center" />
+
+            <Label Text="{Binding message, Mode=TwoWay}" Margin="5" TextColor="White" />                               
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

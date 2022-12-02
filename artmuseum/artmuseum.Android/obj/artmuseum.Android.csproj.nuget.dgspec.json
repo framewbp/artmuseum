@@ -1,0 +1,121 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum.Android/artmuseum.Android.csproj": {}
+  },
+  "projects": {
+    "/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum.Android/artmuseum.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum.Android/artmuseum.Android.csproj",
+        "projectName": "artmuseum.Android",
+        "projectPath": "/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum.Android/artmuseum.Android.csproj",
+        "packagesPath": "/Users/jitdilokwongbubpha/.nuget/packages/",
+        "outputPath": "/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum.Android/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/jitdilokwongbubpha/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid13.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid13.0": {
+            "projectReferences": {
+              "/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/artmuseum.csproj": {
+                "projectPath": "/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/artmuseum.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid13.0": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.3, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2012, )"
+            }
+          }
+        }
+      }
+    },
+    "/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/artmuseum.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/artmuseum.csproj",
+        "projectName": "artmuseum",
+        "projectPath": "/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/artmuseum.csproj",
+        "packagesPath": "/Users/jitdilokwongbubpha/.nuget/packages/",
+        "outputPath": "/Users/jitdilokwongbubpha/Projects/artmuseum/artmuseum/artmuseum/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jitdilokwongbubpha/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.3, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2515, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/Users/jitdilokwongbubpha/Library/Caches/VisualStudio/17.0/MSBuild/1092_3/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

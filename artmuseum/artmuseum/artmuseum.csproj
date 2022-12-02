@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Xamarin.Forms.Essentials.Controls" />
+    <None Remove="Assets\" />
+    <None Remove="Assets\Fonts\" />
+    <None Remove="Assets\Fonts\Montserrat-VariableFont_wght.ttf" />
+    <None Remove="Assets\Fonts\Montserrat-Italic-VariableFont_wght.ttf" />
+    <None Remove="images\" />
+    <None Remove="images\Background_Login.png" />
+    <None Remove="Assets\Fonts\Montserrat-Bold.ttf" />
+    <None Remove="Assets\Fonts\Montserrat-Medium.ttf" />
+    <None Remove="Assets\Fonts\Montserrat-Regular.ttf" />
+    <None Remove="Assets\Fonts\Montserrat-SemiBold.ttf" />
+    <None Remove="Helpers\" />
+    <None Remove="Models\" />
+    <None Remove="Themes\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Views\" />
+    <None Remove="NETStandard.Library" />
+    <None Remove="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\" />
+    <Folder Include="Assets\Fonts\" />
+    <Folder Include="images\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Themes\" />
+    <Folder Include="Views\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Fonts\Montserrat-VariableFont_wght.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Montserrat-Italic-VariableFont_wght.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Montserrat-Bold.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Montserrat-Medium.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Montserrat-Regular.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\Montserrat-SemiBold.ttf" />
+  </ItemGroup>
+</Project>

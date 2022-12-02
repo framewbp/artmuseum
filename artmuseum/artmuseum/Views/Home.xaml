@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="artmuseum.Views.Home">
+    <StackLayout Margin="0,20,0,0">
+
+    <StackLayout
+            Margin="20,20,20,0"
+            Orientation="Horizontal">
+            <!--top controls--> 
+                <Label
+                   HorizontalOptions="StartAndExpand"
+                   Text="THE&#10;ART&#10;MUSEUM"
+                   TextColor="Black"
+                   FontFamily="MSR"
+                   FontSize="12"/>
+
+                <Label
+                   HorizontalOptions="EndAndExpand"
+                   VerticalOptions="Center"
+                   Text="{Binding userDetails.email, StringFormat='Hello, {0}'}"
+                   TextColor="Black"
+                   FontFamily="MSB"
+                   FontSize="12"
+                   FontAttributes="Bold"/>
+
+            </StackLayout>
+
+    <StackLayout VerticalOptions="Start"
+                 BackgroundColor="Black">
+            <!--middle controls-->
+            <Image 
+                   Source="Image_Thumbnail.png"
+                   HorizontalOptions="FillAndExpand"/>
+
+     </StackLayout>
+
+    <StackLayout Orientation="Vertical"
+                 VerticalOptions="StartAndExpand"
+                 Margin="20">
+            <!--center controls-->
+
+            <Label
+                   HorizontalOptions="StartAndExpand"
+                   Text="EXHIBITION"
+                   TextColor="Black"
+                   FontFamily="MSR"
+                   FontSize="12"/>
+            <Label
+                   HorizontalOptions="StartAndExpand"
+                   Text="{Binding userDetails.exhibition}"
+                   TextColor="Black"
+                   FontFamily="MSM"
+                   FontSize="30"/>
+            <Label
+                   HorizontalOptions="StartAndExpand"
+                   Text="{Binding userDetails.date}"
+                   TextColor="#fb2d2d"
+                   FontFamily="MSM"
+                   FontSize="20"/>
+            <Label
+                   HorizontalOptions="StartAndExpand"
+                   Text="{Binding userDetails.optional}"
+                   TextColor="Black"
+                   FontFamily="MSR"
+                   FontSize="12"/>
+
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal"
+                 VerticalOptions="End"
+                 HeightRequest="40"
+                 Margin="20,0,0,20">
+            <!--bottom controls-->
+            <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="StartAndExpand">
+
+                  <Image Source="Group1"
+                   HeightRequest="25"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+
+                <Label
+                   Text="{Binding userDetails.location}"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="Start"
+                   TextColor="#fb2d2d"
+                   FontFamily="MSR"
+                   FontSize="13"/>
+
+                </StackLayout>
+
+            <StackLayout
+                    Margin="5,0,20,0"
+                    Orientation="Horizontal"
+                    HorizontalOptions="EndAndExpand">
+
+                    <Image Source="Group2"
+                   HeightRequest="25"
+                   VerticalOptions="Start"
+                   HorizontalOptions="End"/>
+
+                   <Label
+                   Text="{Binding userDetails.time}"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="End"
+                   TextColor="#fb2d2d"
+                   FontFamily="MSR"
+                   FontSize="13"/>
+
+                </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
